@@ -1,0 +1,10 @@
+<?php
+require_once __DIR__ . '/includes/helpers.php';
+$code = trim((string)($_GET['codigo'] ?? ''));
+$doc = null;
+if ($code !== '') {
+    $stmt = db()->prepare('SELECT d.*,s.name student_name,s.program FROM documents d JOIN students s ON s.id=d.student_id WHERE d.document_number=? LIMIT 1');
+    $stmt->execute([$code]);
+    $doc = $stmt->fetch() ?: null;
+}
+?><!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Verificar documento</title><style>body{margin:0;font-family:system-ui;background:#101511;color:#fff;min-height:100vh;display:grid;place-items:center;padding:20px}.card{width:min(520px,100%);background:#fff;color:#111;border-radius:22px;padding:28px}.brand{font-size:25px;font-weight:900}.brand b{color:#79a844}input{width:100%;padding:13px;border:1px solid #ddd;border-radius:10px;margin:12px 0}.btn{display:inline-block;border:0;background:#79a844;color:#fff;padding:12px 16px;border-radius:10px;font-weight:800}.ok{margin-top:20px;padding:16px;border-radius:12px;background:#edf5e7}.bad{margin-top:20px;padding:16px;border-radius:12px;background:#fff0ef;color:#943b36}.meta{font-size:13px;color:#5f665f}</style></head><body><div class="card"><div class="brand">CARLOS <b>ANÍBAL</b></div><p>Verificação de documento emitido pelo painel.</p><form><input name="codigo" value="<?=e($code)?>" placeholder="Ex.: CA-2026-XXXXXXXX"><button class="btn">Verificar</button></form><?php if($code!=='' && $doc):?><div class="ok"><strong>✓ Documento registrado</strong><p><?=e(ucfirst($doc['type']))?> — <?=e($doc['student_name'])?></p><div class="meta">Programa: <?=e($doc['program'])?><br>Período: <?=e($doc['period_start']?:'—')?> a <?=e($doc['period_end']?:'—')?><br>Emitido em: <?=e(date('d/m/Y H:i',strtotime($doc['issued_at'])))?></div></div><?php elseif($code!==''):?><div class="bad"><strong>Documento não localizado.</strong><p>Confira o código informado.</p></div><?php endif;?><p class="meta"><a href="index.php">← Voltar ao site</a></p></div></body></html>
