@@ -226,7 +226,7 @@ $waLink = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $waMessage;
       <div class="contact-box"><span>WhatsApp</span><strong><?= htmlspecialchars($site['whatsapp_display']) ?></strong><a href="<?= $waLink ?>" target="_blank" rel="noopener">Abrir conversa →</a></div>
       <div class="contact-box"><span>Atendimento</span><strong><?= htmlspecialchars($site['city']) ?></strong><p>Domicílio e áreas comuns de condomínios.</p></div>
       <div class="contact-box"><span>Instagram</span><strong><?= htmlspecialchars($site['instagram']) ?></strong><a href="<?= htmlspecialchars($site['instagram_url']) ?>" target="_blank" rel="noopener">Ver Instagram →</a></div>
-      <blockquote>“Movimento hoje é a base para um futuro com mais saúde, autonomia e confiança.”</blockquote>
+      <blockquote>“Movimento hoje é a base para um futuro com mais sa��de, autonomia e confiança.”</blockquote>
     </aside>
   </div>
 </section>
@@ -247,5 +247,6 @@ $waLink = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $waMessage;
 
 <a class="floating-wa" href="<?= $waLink ?>" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WA</a>
 <script src="assets/js/script.js"></script>
+<script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </body>
 </html>
