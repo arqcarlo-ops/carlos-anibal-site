@@ -1,9 +1,3 @@
-<?php
-$config = require __DIR__ . '/config/config.php';
-$site = $config['site'];
-$waMessage = rawurlencode('Olá, Professor Carlos Aníbal! Gostaria de saber mais sobre o treinamento infantil e agendar uma avaliação.');
-$waLink = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $waMessage;
-?>
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -11,7 +5,7 @@ $waLink = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $waMessage;
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#101411">
 <meta name="description" content="Treinamento infantil personalizado em domicílio e condomínios em Feira de Santana. Desenvolvimento motor, coordenação, equilíbrio, agilidade e preparação esportiva.">
-<title><?= htmlspecialchars($site['name']) ?> | Treinamento e Desenvolvimento Infantil</title>
+<title>Carlos Aníbal | Treinamento e Desenvolvimento Infantil</title>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -30,7 +24,7 @@ $waLink = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $waMessage;
       <a href="#atendimento">Atendimento</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn btn-whatsapp nav-cta" href="<?= $waLink ?>" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn btn-whatsapp nav-cta" href="https://wa.me/5575983131424?text=Ol%C3%A1%2C%20Professor%20Carlos%20An%C3%ADbal%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20treinamento%20infantil%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">WhatsApp</a>
   </div>
 </header>
 
@@ -44,14 +38,14 @@ $waLink = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $waMessage;
       <h1>DESENVOLVIMENTO <span>MOTOR</span> INFANTIL</h1>
       <p class="hero-lead">Treinamento físico orientado para crianças mais ativas, seguras e confiantes — com acompanhamento individual e evolução registrada.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="<?= $waLink ?>" target="_blank" rel="noopener">Agendar avaliação</a>
+        <a class="btn btn-primary" href="https://wa.me/5575983131424?text=Ol%C3%A1%2C%20Professor%20Carlos%20An%C3%ADbal%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20treinamento%20infantil%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
         <a class="btn btn-ghost" href="#programas">Conhecer os programas</a>
       </div>
       <div class="trust-row">
         <span>✓ Atendimento domiciliar</span>
         <span>✓ Condomínios</span>
         <span>✓ Pequenos grupos</span>
-        <span>✓ CREF <?= htmlspecialchars($site['cref']) ?></span>
+        <span>✓ CREF 015760-BA</span>
       </div>
     </div>
   </div>
@@ -196,7 +190,7 @@ $waLink = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $waMessage;
 
 <section class="professor" id="professor">
   <div class="container professor-grid">
-    <div class="professor-card reveal"><img src="assets/img/hero-carlos.jpg" alt="Professor Carlos Aníbal"><div><strong>Carlos Aníbal</strong><span>Profissional de Educação Física</span><span>CREF <?= htmlspecialchars($site['cref']) ?></span></div></div>
+    <div class="professor-card reveal"><img src="assets/img/hero-carlos.jpg" alt="Professor Carlos Aníbal"><div><strong>Carlos Aníbal</strong><span>Profissional de Educação Física</span><span>CREF 015760-BA</span></div></div>
     <div class="professor-copy reveal">
       <p class="eyebrow dark">Conheça o professor</p>
       <h2>PROFESSOR CARLOS ANÍBAL</h2>
@@ -204,7 +198,7 @@ $waLink = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $waMessage;
       <div class="credentials">
         <span>Profissional de Educação Física</span><span>CREF ativo</span><span>Atendimento infantil</span><span>Pequenos grupos</span><span>Relatórios de evolução</span>
       </div>
-      <a class="btn btn-dark" href="<?= $waLink ?>" target="_blank" rel="noopener">Falar com o professor</a>
+      <a class="btn btn-dark" href="https://wa.me/5575983131424?text=Ol%C3%A1%2C%20Professor%20Carlos%20An%C3%ADbal%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20treinamento%20infantil%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Falar com o professor</a>
     </div>
   </div>
 </section>
@@ -229,7 +223,7 @@ $waLink = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $waMessage;
       <p class="eyebrow">Vamos conversar?</p>
       <h2>SEU FILHO PODE IR MAIS LONGE.</h2>
       <p>Preencha os dados abaixo. Ao enviar, o WhatsApp será aberto com uma mensagem pronta para o professor.</p>
-      <form id="contactForm" class="contact-form" data-whatsapp="<?= htmlspecialchars($site['whatsapp']) ?>">
+      <form id="contactForm" class="contact-form" data-whatsapp="5575983131424">
         <div class="field-row"><label>Nome do responsável<input required name="responsavel" autocomplete="name"></label><label>WhatsApp<input required name="telefone" inputmode="tel" autocomplete="tel"></label></div>
         <div class="field-row"><label>Nome da criança<input required name="crianca"></label><label>Idade<input required name="idade" type="number" min="3" max="18"></label></div>
         <label>Onde deseja realizar o treinamento?<select name="local" required><option value="">Selecione</option><option>Minha residência</option><option>Meu condomínio</option><option>Área comum do condomínio</option><option>Ainda não sei</option></select></label>
@@ -240,29 +234,29 @@ $waLink = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $waMessage;
       </form>
     </div>
     <aside class="contact-aside reveal">
-      <div class="contact-box"><span>WhatsApp</span><strong><?= htmlspecialchars($site['whatsapp_display']) ?></strong><a href="<?= $waLink ?>" target="_blank" rel="noopener">Abrir conversa →</a></div>
-      <div class="contact-box"><span>Atendimento</span><strong><?= htmlspecialchars($site['city']) ?></strong><p>Domicílio e áreas comuns de condomínios.</p></div>
-      <div class="contact-box"><span>Instagram</span><strong><?= htmlspecialchars($site['instagram']) ?></strong><a href="<?= htmlspecialchars($site['instagram_url']) ?>" target="_blank" rel="noopener">Ver Instagram →</a></div>
+      <div class="contact-box"><span>WhatsApp</span><strong>(75) 98313-1424</strong><a href="https://wa.me/5575983131424?text=Ol%C3%A1%2C%20Professor%20Carlos%20An%C3%ADbal%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20treinamento%20infantil%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Abrir conversa →</a></div>
+      <div class="contact-box"><span>Atendimento</span><strong>Feira de Santana - BA</strong><p>Domicílio e áreas comuns de condomínios.</p></div>
+      <div class="contact-box"><span>Instagram</span><strong>@anibal_erudilho</strong><a href="https://instagram.com/anibal_erudilho" target="_blank" rel="noopener">Ver Instagram →</a></div>
       <blockquote>“Movimento hoje é a base para um futuro com mais saúde, autonomia e confiança.”</blockquote>
     </aside>
   </div>
 </section>
 
 <section class="final-cta">
-  <div class="container final-cta-inner reveal"><div><p class="eyebrow">Movimento hoje</p><h2>UM FUTURO MELHOR <span>AMANHÃ.</span></h2><p>Agende uma avaliação e dê o primeiro passo para o desenvolvimento do seu filho.</p></div><a class="btn btn-primary" href="<?= $waLink ?>" target="_blank" rel="noopener">Agendar agora pelo WhatsApp</a></div>
+  <div class="container final-cta-inner reveal"><div><p class="eyebrow">Movimento hoje</p><h2>UM FUTURO MELHOR <span>AMANHÃ.</span></h2><p>Agende uma avaliação e dê o primeiro passo para o desenvolvimento do seu filho.</p></div><a class="btn btn-primary" href="https://wa.me/5575983131424?text=Ol%C3%A1%2C%20Professor%20Carlos%20An%C3%ADbal%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20treinamento%20infantil%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar agora pelo WhatsApp</a></div>
 </section>
 </main>
 
 <footer class="site-footer">
   <div class="container footer-top">
     <a class="brand" href="#inicio"><span class="brand-icon">↗</span><span><strong>CARLOS <em>ANÍBAL</em></strong><small>Treinamento e Desenvolvimento Infantil</small></span></a>
-    <div class="footer-meta"><span>Profissional de Educação Física</span><span>CREF <?= htmlspecialchars($site['cref']) ?></span><span><?= htmlspecialchars($site['city']) ?></span></div>
-    <div class="footer-links"><a href="<?= htmlspecialchars($site['instagram_url']) ?>" target="_blank" rel="noopener">Instagram</a><a href="<?= $waLink ?>" target="_blank" rel="noopener">WhatsApp</a><a href="admin/login.php">Área do Professor</a></div>
+    <div class="footer-meta"><span>Profissional de Educação Física</span><span>CREF 015760-BA</span><span>Feira de Santana - BA</span></div>
+    <div class="footer-links"><a href="https://instagram.com/anibal_erudilho" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/5575983131424?text=Ol%C3%A1%2C%20Professor%20Carlos%20An%C3%ADbal%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20treinamento%20infantil%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">WhatsApp</a><a href="admin/login.php">Área do Professor</a></div>
   </div>
-  <div class="container footer-bottom"><span>© <?= date('Y') ?> Carlos Aníbal. Todos os direitos reservados.</span><span>Site demonstrativo — revise textos, dados e políticas antes da publicação.</span></div>
+  <div class="container footer-bottom"><span>© 2026 Carlos Aníbal. Todos os direitos reservados.</span><span>Site demonstrativo — revise textos, dados e políticas antes da publicação.</span></div>
 </footer>
 
-<a class="floating-wa" href="<?= $waLink ?>" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WA</a>
+<a class="floating-wa" href="https://wa.me/5575983131424?text=Ol%C3%A1%2C%20Professor%20Carlos%20An%C3%ADbal%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20treinamento%20infantil%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WA</a>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
