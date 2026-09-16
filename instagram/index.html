@@ -6,47 +6,43 @@
 <meta name="theme-color" content="#0b0f0c">
 <title>Carlos Aníbal | Movimento Acontecer</title>
 <style>
-:root{--bg:#0b0f0c;--green:#82b94b;--bright:#8fc957;--white:#fff;--muted:#c9cec9;--line:rgba(255,255,255,.16)}
-*{box-sizing:border-box} body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 8%,rgba(130,185,75,.14),transparent 32%),var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
-.page{width:min(720px,100%);margin:auto;padding:28px 18px 42px}
-.brand{text-align:center;margin-bottom:28px}.brand-mark{width:58px;height:58px;margin:0 auto 12px;border:2px solid #d9c98c;border-radius:17px;display:grid;place-items:center;color:#d9c98c;font-size:28px;transform:rotate(-8deg)}
-.brand-name{margin:0;font-size:clamp(28px,7vw,44px);font-weight:900;letter-spacing:-1.5px;text-transform:uppercase}.brand-name span{color:var(--green)}
-.brand-sub{margin:6px 0 0;font-size:12px;letter-spacing:1.4px;color:var(--muted);text-transform:uppercase}
-.headline{text-align:center;margin:22px 0}.eyebrow{margin:0 0 8px;color:var(--bright);font-size:13px;font-weight:800;letter-spacing:4px;text-transform:uppercase}
-h1{margin:0;font-size:clamp(42px,12vw,76px);line-height:.9;letter-spacing:-3px;font-weight:900;text-transform:uppercase}h1 span{color:var(--bright)}
-.headline p{max-width:590px;margin:16px auto 0;color:var(--muted);font-size:16px;line-height:1.5}
-.video-wrap{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:#000;box-shadow:0 18px 45px rgba(0,0,0,.35)}
-video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
-.actions{display:grid;gap:13px;margin-top:20px}.btn{display:flex;align-items:center;justify-content:center;min-height:62px;padding:15px 20px;border-radius:17px;text-decoration:none;font-size:17px;font-weight:900;letter-spacing:.4px;transition:transform .2s ease,filter .2s ease}
-.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn-whatsapp,.btn-site{background:var(--green);color:#fff;border:1px solid rgba(255,255,255,.08)}
-.icon{margin-right:11px;font-size:24px;line-height:1}.footer{margin-top:28px;text-align:center;color:#899089;font-size:11px;letter-spacing:2.5px;text-transform:uppercase}
-.footer:before{content:"";display:block;width:48px;height:3px;margin:0 auto 16px;border-radius:99px;background:var(--green)}
-@media(max-width:480px){.page{padding:22px 14px 34px}.headline p{font-size:15px}.video-wrap{border-radius:17px}.btn{min-height:58px}}
+:root{--bg:#0b0f0c;--green:#82b94b;--bright:#8fc957;--white:#fff;--muted:#c9cec9;--line:rgba(255,255,255,.14);--card:#f4f1e9;--ink:#111}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% 5%,rgba(130,185,75,.14),transparent 30%),var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}.page{width:min(720px,100%);margin:auto;padding:20px 16px 28px}
+.brand{text-align:center;margin-bottom:18px}.brand-mark{width:42px;height:42px;margin:0 auto 8px;border:2px solid #d9c98c;border-radius:12px;display:grid;place-items:center;color:#d9c98c;font-size:19px;transform:rotate(-8deg)}.brand-name{margin:0;font-size:clamp(27px,6vw,40px);font-weight:900;letter-spacing:-1.4px;text-transform:uppercase}.brand-name span{color:var(--green)}.brand-sub{margin:4px 0 0;font-size:9px;letter-spacing:1.3px;color:var(--muted);text-transform:uppercase}
+.headline{text-align:center;margin:14px 0 16px}.eyebrow{margin:0 0 5px;color:var(--bright);font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase}h1{margin:0;font-size:clamp(37px,10vw,66px);line-height:.88;letter-spacing:-2.8px;font-weight:900;text-transform:uppercase}h1 span{color:var(--bright)}.headline p{max-width:570px;margin:10px auto 0;color:var(--muted);font-size:12px;line-height:1.35}
+.video-wrap{overflow:hidden;border:1px solid var(--line);border-radius:15px;background:#000;box-shadow:0 14px 32px rgba(0,0,0,.35)}video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.btn{display:flex;align-items:center;justify-content:center;min-height:45px;padding:10px 12px;border-radius:11px;text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.25px}.btn-whatsapp,.btn-site{background:var(--green);color:#fff}.btn:hover{filter:brightness(1.06)}.icon{margin-right:7px;font-size:14px}
+.contact-card{margin-top:15px;background:var(--card);color:var(--ink);border-radius:16px;padding:17px 17px 15px}.contact-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:11px}.contact-head .eyebrow{color:#648f35;margin:0;font-size:9px;letter-spacing:2px}.contact-head h2{margin:2px 0 0;font-size:clamp(23px,6vw,34px);line-height:.9;letter-spacing:-1.4px;text-transform:uppercase}.contact-note{margin:0;color:#555;font-size:11px;line-height:1.35;text-align:right;max-width:230px}.contact-form{display:grid;gap:8px}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.field{display:grid;gap:4px}label{font-size:9px;font-weight:800;color:#222}input,select,textarea{width:100%;border:1px solid #d6d1c5;border-radius:8px;background:#fff;color:#111;font:inherit;font-size:11px;padding:9px 10px;outline:none}input,select{height:36px}textarea{min-height:52px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--green);box-shadow:0 0 0 2px rgba(130,185,75,.14)}.full{grid-column:1/-1}.form-submit{border:0;background:var(--green);color:#fff;border-radius:9px;min-height:39px;font-size:11px;font-weight:900;letter-spacing:.3px;cursor:pointer}.form-submit:hover{filter:brightness(1.06)}.privacy{margin:0;text-align:center;color:#777;font-size:8px}
+.quick-info{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:10px;color:#aeb5ae;font-size:8px;letter-spacing:.5px}.footer{margin-top:14px;text-align:center;color:#899089;font-size:8px;letter-spacing:2px;text-transform:uppercase}.footer:before{content:"";display:block;width:32px;height:2px;margin:0 auto 8px;border-radius:99px;background:var(--green)}
+@media(max-width:520px){.page{padding:16px 12px 24px}.actions{grid-template-columns:1fr;gap:7px}.btn{min-height:42px}.contact-card{padding:14px}.contact-head{display:block}.contact-note{text-align:left;margin-top:5px;max-width:none}.field-row{grid-template-columns:1fr 1fr}.contact-form{gap:7px}}
+@media(max-width:370px){.field-row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <main class="page">
-<header class="brand">
-<div class="brand-mark" aria-hidden="true">↗</div>
-<h2 class="brand-name">Carlos <span>Aníbal</span></h2>
-<p class="brand-sub">Treinamento e Desenvolvimento Infantil</p>
-</header>
-<section class="headline">
-<p class="eyebrow">Na prática</p>
-<h1>Veja o<br><span>movimento acontecer</span></h1>
-<p>Um pouco do trabalho, da energia e do movimento que fazem parte do desenvolvimento infantil.</p>
-</section>
-<section class="video-wrap" aria-label="Vídeo do treinamento infantil">
-<video controls playsinline preload="metadata" poster="../assets/img/hero-carlos.jpg">
-<source src="../assets/Video/01-quadra.mp4" type="video/mp4">
-Seu navegador não suporta a reprodução de vídeo.
-</video>
-</section>
-<nav class="actions" aria-label="Ações">
-<a class="btn btn-whatsapp" href="https://wa.me/5575983131424?text=Ol%C3%A1%2C%20Professor%20Carlos%20An%C3%ADbal%21%20Vim%20pelo%20Instagram%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20treinamento%20infantil." target="_blank" rel="noopener"><span class="icon">◉</span>ENTRE EM CONTATO</a>
-<a class="btn btn-site" href="../"><span class="icon">⌂</span>ENTRE NO SITE</a>
-</nav>
+<header class="brand"><div class="brand-mark" aria-hidden="true">↗</div><h2 class="brand-name">Carlos <span>Aníbal</span></h2><p class="brand-sub">Treinamento e Desenvolvimento Infantil</p></header>
+<section class="headline"><p class="eyebrow">Na prática</p><h1>Veja o<br><span>movimento acontecer</span></h1><p>Um pouco do trabalho, da energia e do movimento que fazem parte do desenvolvimento infantil.</p></section>
+<section class="video-wrap" aria-label="Vídeo do treinamento infantil"><video controls playsinline preload="metadata" poster="../assets/img/hero-carlos.jpg"><source src="../assets/Video/01-quadra.mp4" type="video/mp4">Seu navegador não suporta a reprodução de vídeo.</video></section>
+<nav class="actions" aria-label="Ações"><a class="btn btn-whatsapp" href="https://wa.me/5575983131424?text=Ol%C3%A1%2C%20Professor%20Carlos%20An%C3%ADbal%21%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20treinamento%20infantil." target="_blank" rel="noopener"><span class="icon">◉</span>ENTRE EM CONTATO</a><a class="btn btn-site" href="../"><span class="icon">⌂</span>ENTRE NO SITE</a></nav>
+<section class="contact-card" id="contato">
+<div class="contact-head"><div><p class="eyebrow">Vamos conversar?</p><h2>Seu filho pode ir mais longe.</h2></div><p class="contact-note">Preencha os dados. Ao enviar, o WhatsApp será aberto com a mensagem pronta para o professor.</p></div>
+<form id="contactForm" class="contact-form" data-whatsapp="5575983131424">
+<div class="field-row"><div class="field"><label for="responsavel">Nome do responsável</label><input id="responsavel" required name="responsavel" autocomplete="name"></div><div class="field"><label for="telefone">WhatsApp</label><input id="telefone" required name="telefone" inputmode="tel" autocomplete="tel"></div></div>
+<div class="field-row"><div class="field"><label for="crianca">Nome da criança</label><input id="crianca" required name="crianca"></div><div class="field"><label for="idade">Idade</label><input id="idade" required name="idade" type="number" min="3" max="18"></div></div>
+<div class="field-row"><div class="field"><label for="local">Onde deseja realizar o treinamento?</label><select id="local" name="local" required><option value="">Selecione</option><option>Minha residência</option><option>Meu condomínio</option><option>Área comum do condomínio</option><option>Ainda não sei</option></select></div><div class="field"><label for="bairro">Bairro / condomínio</label><input id="bairro" name="bairro" placeholder="Ex.: SIM, Santa Mônica..."></div></div>
+<div class="field-row"><div class="field"><label for="interesse">Principal interesse</label><select id="interesse" name="interesse"><option>Movimento Kids</option><option>Pequenos Atletas</option><option>Preparação esportiva</option><option>Retorno gradual à atividade física</option><option>Pequenos grupos</option><option>Quero orientação do professor</option></select></div><div class="field"><label for="objetivo">Objetivo</label><input id="objetivo" name="objetivo" placeholder="Ex.: melhorar coordenação..."></div></div>
+<button class="form-submit" type="submit">ENVIAR PELO WHATSAPP</button><p class="privacy">Seus dados serão usados apenas para iniciar o contato pelo WhatsApp.</p>
+</form></section>
+<div class="quick-info"><span>WhatsApp: (75) 98313-1424</span><span>Feira de Santana - BA</span><span>@anibal_erudilho</span></div>
 <footer class="footer">Movimento hoje · Grandes conquistas amanhã</footer>
 </main>
+<script>
+document.getElementById('contactForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const f=new FormData(this), number=this.dataset.whatsapp;
+ const msg=`Olá, Professor Carlos Aníbal! Gostaria de saber mais sobre o treinamento infantil.\n\nResponsável: ${f.get('responsavel')}\nWhatsApp: ${f.get('telefone')}\nCriança: ${f.get('crianca')}\nIdade: ${f.get('idade')} anos\nLocal: ${f.get('local')}\nBairro/condomínio: ${f.get('bairro')||'Não informado'}\nPrincipal interesse: ${f.get('interesse')}\nObjetivo: ${f.get('objetivo')||'Não informado'}`;
+ window.open(`https://wa.me/${number}?text=${encodeURIComponent(msg)}`,'_blank');
+});
+</script>
 </body>
 </html>
