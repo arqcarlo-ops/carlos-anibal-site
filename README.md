@@ -44,19 +44,18 @@ http://localhost:8000
 
 Painel:
 
-
 ```text
 http://localhost:8000/admin/login.php
+```
 
+### Acesso inicial
 
-### Acesso administrativo
+- E-mail: `admin@carlosanibal.com.br`
+- Senha: `MovimentoKids2026!`
 
-O acesso ao painel administrativo deve ser configurado diretamente no ambiente de produção.
-
-
+**Troque a senha em Painel > Configurações antes de publicar.**
 
 O modo padrão usa SQLite e cria o banco automaticamente no primeiro acesso.
-
 
 ## 4. Colocar em hospedagem compartilhada
 

@@ -113,6 +113,23 @@ $waLink = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $waMessage;
   </div>
 </section>
 
+<section class="movement-video section-dark" id="movimento-video">
+  <div class="container movement-video-grid">
+    <div class="movement-video-copy reveal">
+      <p class="eyebrow">Na prática</p>
+      <h2>VEJA O MOVIMENTO <span>ACONTECER</span></h2>
+      <p>Um pouco do trabalho, da energia e do movimento que fazem parte do desenvolvimento infantil.</p>
+      <p class="movement-video-note">Treinamento orientado, movimento e descoberta em cada etapa.</p>
+    </div>
+    <div class="movement-video-frame reveal">
+      <video controls playsinline preload="metadata" poster="assets/img/hero-carlos.jpg" aria-label="Vídeo do treinamento infantil Carlos Aníbal">
+        <source src="assets/Video/01-quadra.mp4" type="video/mp4">
+        Seu navegador não suporta a reprodução de vídeo.
+      </video>
+    </div>
+  </div>
+</section>
+
 <section class="how" id="como-funciona">
   <div class="container">
     <div class="section-heading centered reveal">
